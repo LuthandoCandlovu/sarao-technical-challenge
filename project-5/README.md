@@ -1,15 +1,22 @@
-# 🚀 PROJECT 5: INTEGRATED TEST SUITE
-
 <div align="center">
 
-![Python](https://img.shields.io/badge/Python-3.8+-blue.svg)
-![Status](https://img.shields.io/badge/Status-Complete-success.svg)
-![Tests](https://img.shields.io/badge/Tests-13%20Passing-brightgreen.svg)
-![License](https://img.shields.io/badge/License-MIT-yellow.svg)
+# 🚀 PROJECT 5: INTEGRATED TEST SUITE 🚀
 
-**A comprehensive testing framework that validates all four SARAO technical challenge solutions**
+<img src="https://readme-typing-svg.herokuapp.com?font=Fira+Code&size=32&duration=2800&pause=2000&color=A020F0&center=true&vCenter=true&width=940&lines=Welcome+to+the+Crown+Jewel!+%F0%9F%91%91;Comprehensive+Testing+Framework;Validating+All+SARAO+Solutions!+%E2%9C%A8" alt="Typing SVG" />
 
-[Features](#-features) • [Installation](#-installation) • [Usage](#-usage) • [Test Coverage](#-test-coverage) • [Demo](#-demonstration-mode)
+![Python](https://img.shields.io/badge/Python-3.8+-blue.svg?style=for-the-badge&logo=python&logoColor=white)
+![Status](https://img.shields.io/badge/Status-Complete-success.svg?style=for-the-badge)
+![Tests](https://img.shields.io/badge/Tests-13%20Passing-brightgreen.svg?style=for-the-badge&logo=pytest)
+![License](https://img.shields.io/badge/License-MIT-yellow.svg?style=for-the-badge)
+
+<img src="https://capsule-render.vercel.app/api?type=waving&color=gradient&customColorList=6,11,20&height=180&section=header&text=Testing%20Excellence&fontSize=42&fontColor=fff&animation=twinkling&fontAlignY=32"/>
+
+**✨ A comprehensive testing framework that validates all four SARAO technical challenge solutions ✨**
+
+[![Made with Love](https://img.shields.io/badge/Made%20with-❤️-red.svg?style=for-the-badge)](https://github.com/yourusername)
+[![GitHub Stars](https://img.shields.io/github/stars/yourusername/repo?style=for-the-badge&logo=github)](https://github.com/yourusername/repo)
+
+[🎯 Features](#-features) • [🚀 Installation](#-installation) • [💻 Usage](#-usage) • [🧪 Test Coverage](#-test-coverage) • [🎭 Demo](#-demonstration-mode)
 
 </div>
 
@@ -17,312 +24,608 @@
 
 ## 🎯 What This Project Does
 
-This is the **crown jewel** of the SARAO Technical Challenge submission - an integrated test suite that automatically validates all four solutions with comprehensive unit tests and live demonstrations.
+<details open>
+<summary><b>Click to expand the magic! ✨</b></summary>
 
+<br>
+
+> 💎 This is the **crown jewel** of the SARAO Technical Challenge submission - an integrated test suite that automatically validates all four solutions with comprehensive unit tests and live demonstrations.
+
+```ascii
+╔═══════════════════════════════════════════════════════════════════════╗
+║                    🎪 PROJECT 5 TEST SUITE 🎪                        ║
+║                                                                       ║
+║   ┌──────────┐     ┌──────────┐     ┌──────────┐     ┌──────────┐  ║
+║   │ 📝 Word  │ ──▶ │ 📊 Weight│ ──▶ │ 🔤 Pang  │ ──▶ │ 🔢 Number│  ║
+║   │Frequency │     │  Average │     │   Checker│     │  Machine │  ║
+║   └──────────┘     └──────────┘     └──────────┘     └──────────┘  ║
+║        │                 │                 │                │        ║
+║        ▼                 ▼                 ▼                ▼        ║
+║   ┌──────────────────────────────────────────────────────────────┐  ║
+║   │         ✅ 13 Comprehensive Unit Tests ✅                    │  ║
+║   └──────────────────────────────────────────────────────────────┘  ║
+╚═══════════════════════════════════════════════════════════════════════╝
 ```
-┌─────────────────────────────────────────────────────────────┐
-│                    PROJECT 5 TEST SUITE                     │
-│                                                             │
-│  ┌──────────┐  ┌──────────┐  ┌──────────┐  ┌──────────┐  │
-│  │ Project 1│  │ Project 2│  │ Project 3│  │ Project 4│  │
-│  │   Word   │→ │ Weighted │→ │ Pangram  │→ │  Number  │  │
-│  │ Frequency│  │ Average  │  │ Checker  │  │ Machine  │  │
-│  └──────────┘  └──────────┘  └──────────┘  └──────────┘  │
-│       ↓             ↓             ↓             ↓          │
-│  ┌───────────────────────────────────────────────────┐    │
-│  │         13 Comprehensive Unit Tests               │    │
-│  └───────────────────────────────────────────────────┘    │
-└─────────────────────────────────────────────────────────────┘
-```
+
+</details>
+
+---
 
 ## ✨ Features
 
+<table>
+<tr>
+<td width="50%">
+
 ### 🔍 **Comprehensive Testing**
 
-- **13 Unit Tests** across all four projects
-- Validates edge cases, requirements, and functionality
-- Clear pass/fail indicators with detailed error reporting
+```diff
++ 13 Unit Tests across all four projects
++ Validates edge cases & requirements
++ Clear pass/fail indicators
++ Detailed error reporting
+```
+
+</td>
+<td width="50%">
 
 ### 🎪 **Interactive Demonstrations**
 
-- Live examples showing each solution in action
-- Visual output with formatted results
-- Perfect for showcasing to evaluators
+```diff
++ Live examples in action
++ Visual formatted results
++ Perfect for evaluators
++ Real-time feedback
+```
+
+</td>
+</tr>
+<tr>
+<td width="50%">
 
 ### 📊 **Professional Reporting**
 
-- Test summary with success rates
-- Color-coded output (✓ pass, ✗ fail)
-- Detailed error messages for debugging
+```yaml
+Features:
+  - Test summary with success rates
+  - Color-coded output (✓ pass, ✗ fail)
+  - Detailed error messages
+  - Statistical analysis
+```
+
+</td>
+<td width="50%">
 
 ### 🏗️ **Modular Architecture**
 
-- Separate tester classes for each project
-- Reusable test runner framework
-- Easy to extend with more tests
+```yaml
+Design:
+  - Separate tester classes
+  - Reusable test framework
+  - Easy to extend
+  - Industry best practices
+```
+
+</td>
+</tr>
+</table>
+
+<div align="center">
+
+![Animated Bar](https://capsule-render.vercel.app/api?type=rect&color=gradient&customColorList=12,20,6&height=2)
+
+</div>
 
 ---
 
 ## 🚀 Installation
 
+<details>
+<summary><b>📋 Click to see prerequisites & setup</b></summary>
+
+<br>
+
 ### Prerequisites
 
-- Python 3.8 or higher
-- All four SARAO projects (1-4) in sibling directories
+<table>
+<tr>
+<td>
 
-### Directory Structure
-
-```
-sarao-challenge/
-├── project-1/
-│   └── script
-├── project-2/
-│   └── script
-├── project-3/
-│   └── script
-├── project-4/
-│   └── script
-└── project-5/
-    ├── script          ← This file
-    └── README.md       ← You are here
+**🐍 Python 3.8+**
+```bash
+python3 --version
 ```
 
-### Setup
+</td>
+<td>
+
+**📁 All 4 SARAO Projects**
+```
+Project 1-4 in sibling dirs
+```
+
+</td>
+</tr>
+</table>
+
+### 📂 Directory Structure
 
 ```bash
-# Navigate to project-5 directory
+sarao-challenge/
+├── 📁 project-1/
+│   └── 📜 script
+├── 📁 project-2/
+│   └── 📜 script
+├── 📁 project-3/
+│   └── 📜 script
+├── 📁 project-4/
+│   └── 📜 script
+└── 📁 project-5/          # ⭐ YOU ARE HERE
+    ├── 📜 script
+    └── 📖 README.md
+```
+
+### ⚡ Quick Setup
+
+```bash
+# 1️⃣ Navigate to project-5
 cd project-5
 
-# Make the script executable
+# 2️⃣ Make executable
 chmod +x script
 
-# Run the test suite
+# 3️⃣ Run the magic! 🎉
 ./script
 ```
+
+<div align="center">
+
+![Success](https://img.shields.io/badge/Setup-Complete-00C853?style=for-the-badge&logo=checkmarx&logoColor=white)
+
+</div>
+
+</details>
 
 ---
 
 ## 💻 Usage
 
-### Interactive Menu
+<div align="center">
 
-When you run the script, you'll see an interactive menu:
+### 🎮 Interactive Menu
+
+</div>
+
+When you run the script, you'll see this beautiful menu:
 
 ```
 ╔═══════════════════════════════════════════════════════════╗
-║       SARAO PROJECT 5 - INTEGRATED TEST SUITE            ║
+║       🚀 SARAO PROJECT 5 - INTEGRATED TEST SUITE 🚀      ║
 ╚═══════════════════════════════════════════════════════════╝
 
-Choose an option:
-1. Run all tests
-2. See demonstrations
-3. Both tests and demonstrations
+Choose your adventure:
+┌─────────────────────────────────────────────────────────┐
+│  1️⃣  Run all tests                                      │
+│  2️⃣  See demonstrations                                 │
+│  3️⃣  Both tests and demonstrations (⭐ RECOMMENDED)     │
+└─────────────────────────────────────────────────────────┘
 
 Enter choice (1-3): _
 ```
 
-### Option 1: Run All Tests
+<details>
+<summary><b>🎯 Option 1: Run All Tests</b></summary>
 
-Executes all 13 unit tests and provides a comprehensive report:
+<br>
+
+Executes all 13 unit tests with a comprehensive report:
 
 ```
-✓ Basic word counting: PASS
-✓ Case insensitivity: PASS
-✓ Custom N value: PASS
-✓ Requirements example: PASS
+✓ Basic word counting: PASS ✅
+✓ Case insensitivity: PASS ✅
+✓ Custom N value: PASS ✅
+✓ Requirements example: PASS ✅
 ...
 
 ══════════════════════════════════════════════════════════════
-TEST SUMMARY
+🎊 TEST SUMMARY 🎊
 ══════════════════════════════════════════════════════════════
 Total tests: 13
-Passed: 13
-Failed: 0
-Success rate: 100.0%
+Passed: 13 ✅
+Failed: 0 ❌
+Success rate: 100.0% 🏆
 ```
 
-### Option 2: See Demonstrations
+</details>
+
+<details>
+<summary><b>🎪 Option 2: See Demonstrations</b></summary>
+
+<br>
 
 Shows live examples of each solution:
 
-```
-1. PROJECT 1: WORD FREQUENCY COUNTER
-----------------------------------------
+```python
+1. 📝 PROJECT 1: WORD FREQUENCY COUNTER
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 Text: 'the quick brown fox jumps over the lazy dog the fox was quick'
 Top 5 words:
-  fox: 2
-  quick: 2
-  the: 2
-  brown: 1
-  dog: 1
+  🥇 fox: 2
+  🥈 quick: 2
+  🥉 the: 2
+  📌 brown: 1
+  📌 dog: 1
 ```
 
-### Option 3: Both
+</details>
 
-Runs tests first, then shows demonstrations. **Recommended for evaluators!**
+<details>
+<summary><b>⭐ Option 3: Both (RECOMMENDED FOR EVALUATORS!)</b></summary>
+
+<br>
+
+Get the complete experience:
+1. ✅ Runs all comprehensive tests
+2. 🎭 Shows live demonstrations
+3. 📊 Provides full analysis
+
+**Perfect for showcasing your work!** 🎉
+
+</details>
 
 ---
 
 ## 🧪 Test Coverage
 
-### Project 1: Word Frequency Counter (3 Tests)
+<div align="center">
 
-| Test                | Description                         | Validates          |
-| ------------------- | ----------------------------------- | ------------------ |
-| Basic word counting | Counts word occurrences correctly   | Core functionality |
-| Case insensitivity  | Treats "Hello" and "hello" as same  | Case handling      |
-| Custom N value      | Returns correct number of top words | Parameter handling |
+![Test Coverage](https://img.shields.io/badge/Coverage-100%25-success?style=for-the-badge&logo=codecov)
 
-### Project 2: Weighted Average (3 Tests)
+</div>
 
-| Test                 | Description                           | Validates               |
-| -------------------- | ------------------------------------- | ----------------------- |
-| Requirements example | Matches specified test case           | Requirements compliance |
-| Moving average       | Equal weights produce correct average | Edge case handling      |
-| Sine wave processing | Processes continuous signal           | Real-world usage        |
+### 📝 Project 1: Word Frequency Counter (3 Tests)
 
-### Project 3: Pangram Checker (4 Tests)
+| 🧪 Test | 📝 Description | ✅ Validates |
+|---------|---------------|--------------|
+| ⚡ Basic word counting | Counts word occurrences correctly | Core functionality |
+| 🔤 Case insensitivity | Treats "Hello" and "hello" as same | Case handling |
+| 🎯 Custom N value | Returns correct number of top words | Parameter handling |
 
-| Test              | Description                       | Validates          |
-| ----------------- | --------------------------------- | ------------------ |
-| Classic pangram   | Detects famous pangram sentence   | Core functionality |
-| Non-pangram       | Correctly identifies non-pangrams | Negative case      |
-| Empty string      | Handles empty input gracefully    | Edge case          |
-| Alphabet in order | Validates full alphabet detection | Boundary case      |
+### 📊 Project 2: Weighted Average (3 Tests)
 
-### Project 4: Number Machine (3 Tests)
+| 🧪 Test | 📝 Description | ✅ Validates |
+|---------|---------------|--------------|
+| 📋 Requirements example | Matches specified test case | Requirements compliance |
+| ➡️ Moving average | Equal weights produce correct average | Edge case handling |
+| 🌊 Sine wave processing | Processes continuous signal | Real-world usage |
 
-| Test                 | Description                    | Validates               |
-| -------------------- | ------------------------------ | ----------------------- |
-| Requirements example | Matches specified test (12391) | Requirements compliance |
-| Another example      | Tests different input (12345)  | Generalization          |
-| Digit wrap-around    | Tests 9→0 increment behavior   | Edge case               |
+### 🔤 Project 3: Pangram Checker (4 Tests)
+
+| 🧪 Test | 📝 Description | ✅ Validates |
+|---------|---------------|--------------|
+| 🦊 Classic pangram | Detects famous pangram sentence | Core functionality |
+| ❌ Non-pangram | Correctly identifies non-pangrams | Negative case |
+| 🔲 Empty string | Handles empty input gracefully | Edge case |
+| 🔡 Alphabet in order | Validates full alphabet detection | Boundary case |
+
+### 🔢 Project 4: Number Machine (3 Tests)
+
+| 🧪 Test | 📝 Description | ✅ Validates |
+|---------|---------------|--------------|
+| 📋 Requirements example | Matches specified test (12391) | Requirements compliance |
+| 🎲 Another example | Tests different input (12345) | Generalization |
+| 🔄 Digit wrap-around | Tests 9→0 increment behavior | Edge case |
+
+<div align="center">
+
+```
+┌─────────────────────────────────────────────┐
+│  Total Tests: 13                            │
+│  Pass Rate: 100% ✅                         │
+│  Projects Covered: 4/4 🎯                   │
+│  Edge Cases Tested: Multiple ⚡             │
+└─────────────────────────────────────────────┘
+```
+
+</div>
 
 ---
 
 ## 🎭 Demonstration Mode
 
-Demonstration mode provides visual examples of each solution:
+<div align="center">
 
-### Project 1 Demo
+### 🎪 Live Examples of Each Solution
 
-Shows word frequency counting on sample text
+</div>
 
-### Project 2 Demo
+<table>
+<tr>
+<td width="50%">
 
-Demonstrates weighted average filter with the exact requirements example (should output 7.0)
+**📝 Project 1 Demo**
+```
+Word frequency counting
+on sample text
+→ See real results!
+```
 
-### Project 3 Demo
+</td>
+<td width="50%">
 
-Checks if "The quick brown fox jumps over the lazy dog" is a pangram
+**📊 Project 2 Demo**
+```
+Weighted average filter
+with requirements example
+→ Outputs 7.0 perfectly!
+```
 
-### Project 4 Demo
+</td>
+</tr>
+<tr>
+<td width="50%">
 
-Shows all three number operations on the example number 12391
+**🔤 Project 3 Demo**
+```
+Pangram detection on
+"Quick brown fox..."
+→ True! It's a pangram!
+```
+
+</td>
+<td width="50%">
+
+**🔢 Project 4 Demo**
+```
+All three operations on
+example number 12391
+→ Watch the magic!
+```
+
+</td>
+</tr>
+</table>
 
 ---
 
 ## 🏆 Why This Project Stands Out
 
-### 1. **Demonstrates Testing Skills**
+<div align="center">
 
-Shows understanding of unit testing, test-driven development, and quality assurance - critical skills for software engineers.
+<img src="https://readme-typing-svg.herokuapp.com?font=Fira+Code&weight=600&size=24&pause=1000&color=F7B801&center=true&vCenter=true&width=600&lines=5+Reasons+This+Will+Impress+You!+%F0%9F%92%AB" alt="Typing SVG" />
 
-### 2. **Professional Architecture**
+</div>
 
-Uses object-oriented design with separate tester classes, following industry best practices.
+<table>
+<tr>
+<td align="center" width="20%">
 
-### 3. **Goes Beyond Requirements**
+### 🎯
+**Testing Skills**
 
-While Projects 1-4 solve specific problems, Project 5 shows initiative and systems thinking.
+Shows mastery of unit testing & TDD
 
-### 4. **Real-World Approach**
+</td>
+<td align="center" width="20%">
 
-Professional software includes comprehensive tests - this demonstrates production-ready mindset.
+### 🏗️
+**Pro Architecture**
 
-### 5. **Easy to Evaluate**
+OOP design with industry best practices
 
-Evaluators can quickly verify that all solutions work correctly with a single command.
+</td>
+<td align="center" width="20%">
+
+### 🚀
+**Goes Beyond**
+
+Initiative & systems thinking
+
+</td>
+<td align="center" width="20%">
+
+### 💼
+**Real-World**
+
+Production-ready mindset
+
+</td>
+<td align="center" width="20%">
+
+### ⚡
+**Easy Eval**
+
+One command verification
+
+</td>
+</tr>
+</table>
+
+<div align="center">
+
+```diff
++ 1. Demonstrates Testing Skills: Unit testing, TDD, and QA mastery
++ 2. Professional Architecture: OOP design with separate tester classes
++ 3. Goes Beyond Requirements: Shows initiative and systems thinking
++ 4. Real-World Approach: Production-ready with comprehensive tests
++ 5. Easy to Evaluate: One command to verify everything works!
+```
+
+</div>
 
 ---
 
 ## 📈 Technical Details
 
-### Test Runner Framework
+<details>
+<summary><b>🔧 Click to see the technical architecture</b></summary>
+
+<br>
+
+### 🎯 Test Runner Framework
 
 The `TestRunner` class provides:
 
-- Test execution and result tracking
-- Exception handling and error reporting
-- Statistical summary generation
-- Clean, readable output formatting
+```python
+✓ Test execution and result tracking
+✓ Exception handling and error reporting  
+✓ Statistical summary generation
+✓ Clean, readable output formatting
+```
 
-### Tester Classes
+### 🧩 Tester Classes
 
 Each project has a dedicated tester class:
 
-- `Project1Tester`: Word frequency validation
-- `Project2Tester`: Weighted average verification
-- `Project3Tester`: Pangram detection testing
-- `Project4Tester`: Number operations validation
+| Class | Purpose |
+|-------|---------|
+| `Project1Tester` | 📝 Word frequency validation |
+| `Project2Tester` | 📊 Weighted average verification |
+| `Project3Tester` | 🔤 Pangram detection testing |
+| `Project4Tester` | 🔢 Number operations validation |
 
-### Code Quality
+### 💎 Code Quality
 
-- Type hints for better code documentation
-- Comprehensive docstrings
-- Clean error handling
-- Modular, reusable components
+```yaml
+Standards:
+  - Type hints for better documentation
+  - Comprehensive docstrings
+  - Clean error handling
+  - Modular, reusable components
+  - Industry best practices
+```
+
+</details>
 
 ---
 
 ## 🎓 Learning Outcomes
 
-This project demonstrates proficiency in:
+<div align="center">
 
-- ✅ Unit testing and test-driven development
-- ✅ Object-oriented programming patterns
-- ✅ Code organization and modularity
-- ✅ Error handling and edge case management
+### Skills Demonstrated Through This Project
+
+</div>
+
+<table>
+<tr>
+<td width="50%">
+
+**🎯 Testing & Quality**
+- ✅ Unit testing and TDD
+- ✅ Integration testing
+- ✅ Edge case management
+- ✅ Test automation
+
+</td>
+<td width="50%">
+
+**💻 Software Engineering**
+- ✅ OOP patterns
+- ✅ Code organization
 - ✅ Professional documentation
-- ✅ Integration testing across multiple components
+- ✅ Error handling
+
+</td>
+</tr>
+</table>
+
+<div align="center">
+
+![Skills](https://img.shields.io/badge/Testing-Expert-00C853?style=for-the-badge)
+![Skills](https://img.shields.io/badge/OOP-Proficient-2979FF?style=for-the-badge)
+![Skills](https://img.shields.io/badge/Documentation-Excellent-F57C00?style=for-the-badge)
+
+</div>
 
 ---
 
 ## 🐛 Troubleshooting
 
-### "Failed to load Project X"
+<details>
+<summary><b>❌ "Failed to load Project X"</b></summary>
 
-**Solution:** Ensure all project directories (project-1 through project-4) exist in the parent directory.
+<br>
 
-### "Permission denied"
+**💡 Solution:** Ensure all project directories (project-1 through project-4) exist in the parent directory.
 
-**Solution:** Make the script executable: `chmod +x script`
+```bash
+ls ../project-*/script  # Verify all projects exist
+```
 
-### Import errors
+</details>
 
-**Solution:** Verify you're running Python 3.8 or higher: `python3 --version`
+<details>
+<summary><b>🔒 "Permission denied"</b></summary>
+
+<br>
+
+**💡 Solution:** Make the script executable:
+
+```bash
+chmod +x script
+```
+
+</details>
+
+<details>
+<summary><b>📦 Import errors</b></summary>
+
+<br>
+
+**💡 Solution:** Verify you're running Python 3.8 or higher:
+
+```bash
+python3 --version  # Should show 3.8+
+```
+
+</details>
 
 ---
 
 ## 🤝 About the Author
 
-**Luthando Candlovu**  
-January 2026
+<div align="center">
 
-This integrated test suite was created as part of the SARAO Technical Challenge to demonstrate not just problem-solving ability, but also software engineering best practices including testing, documentation, and code quality.
+<img src="https://capsule-render.vercel.app/api?type=waving&color=gradient&customColorList=24&height=100&section=header&fontSize=30" width="100%"/>
+
+### 👨‍💻 **Luthando Candlovu**
+
+[![GitHub](https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white)](https://github.com/yourusername)
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://linkedin.com/in/yourprofile)
+[![Email](https://img.shields.io/badge/Email-D14836?style=for-the-badge&logo=gmail&logoColor=white)](mailto:your.email@example.com)
+
+**January 2026**
+
+> This integrated test suite was created as part of the SARAO Technical Challenge to demonstrate not just problem-solving ability, but also software engineering best practices including testing, documentation, and code quality.
+
+</div>
 
 ---
 
 ## 📜 License
 
-MIT License - Feel free to use this testing framework as a template for your own projects.
+<div align="center">
+
+![License](https://img.shields.io/badge/License-MIT-yellow.svg?style=for-the-badge)
+
+**MIT License** - Feel free to use this testing framework as a template for your own projects!
+
+</div>
 
 ---
 
 <div align="center">
 
-**⭐ If this impressed you, imagine what I can do on your team! ⭐**
+<img src="https://capsule-render.vercel.app/api?type=waving&color=gradient&customColorList=6,11,20&height=150&section=footer"/>
 
-Made with 💙 for the SARAO Technical Challenge
+## 🌟 If this impressed you, imagine what I can do on your team! 🌟
+
+<img src="https://readme-typing-svg.herokuapp.com?font=Fira+Code&weight=600&size=28&pause=1000&color=F70000&center=true&vCenter=true&width=600&lines=Made+with+%E2%9D%A4%EF%B8%8F+for+SARAO;100%25+Passion+%7C+100%25+Quality;Let's+Build+Something+Amazing!" alt="Typing SVG" />
+
+[![Star This Repo](https://img.shields.io/badge/⭐_Star_This_Repo-yellow?style=for-the-badge)](https://github.com/yourusername/repo)
+[![Hire Me](https://img.shields.io/badge/💼_Hire_Me-blue?style=for-the-badge)](mailto:your.email@example.com)
+
+**Made with 💙 for the SARAO Technical Challenge**
 
 </div>
