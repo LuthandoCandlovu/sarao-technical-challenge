@@ -592,28 +592,6 @@ Reading #8:  23.2°C → Filtered: 47.02°C
 
 </div>
 
-### 🎛️ Detailed Process Flow
-
-```mermaid
-graph TD
-    A[🆕 New Value x Arrives] --> B{📏 Is len(values) = n?}
-    B -->|Yes| C[🗑️ Remove Last Element<br/>values.pop]
-    B -->|No| D[✅ Skip Removal]
-    C --> E[📌 Insert at Front<br/>values.insert 0, x]
-    D --> E
-    E --> F[🔢 Initialize sum = 0]
-    F --> G[🔄 Loop: i = 0 to len values]
-    G --> H[➕ sum += weights[i] × values[i]]
-    H --> I{🔁 More values?}
-    I -->|Yes| G
-    I -->|No| J[➗ Divide sum by n]
-    J --> K[✨ Return Weighted Average]
-
-    style A fill:#4CAF50,stroke:#fff,stroke-width:2px,color:#fff
-    style E fill:#2196F3,stroke:#fff,stroke-width:2px,color:#fff
-    style H fill:#FF9800,stroke:#fff,stroke-width:2px,color:#fff
-    style K fill:#9C27B0,stroke:#fff,stroke-width:2px,color:#fff
-```
 
 ### 🎨 Weight Patterns & Their Effects
 
