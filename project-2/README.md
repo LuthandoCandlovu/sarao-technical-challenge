@@ -7,11 +7,7 @@
 ![Python](https://img.shields.io/badge/Python-3.8+-3776AB.svg?style=for-the-badge&logo=python&logoColor=white)
 ![Signal Processing](https://img.shields.io/badge/Domain-Signal_Processing-FF6B35.svg?style=for-the-badge&logo=soundcharts&logoColor=white)
 ![Status](https://img.shields.io/badge/Status-Complete-00C853.svg?style=for-the-badge&logo=checkmarx&logoColor=white)
-<<<<<<< HEAD
-![Algorithm](<https://img.shields.io/badge/Algorithm-O(n)-9C27B0.svg?style=for-the-badge>)
-=======
 ![Algorithm](https://img.shields.io/badge/Algorithm-O(n)-9C27B0.svg?style=for-the-badge)
->>>>>>> f21489ca56be5111a317ad324164baecc8f12c8a
 
 <img src="https://user-images.githubusercontent.com/74038190/212284100-561aa473-3905-4a80-b561-0d28506553ee.gif" width="800">
 
@@ -93,17 +89,10 @@ graph TB
     style B fill:#2196F3,stroke:#fff,stroke-width:3px,color:#fff
     style F fill:#FF9800,stroke:#fff,stroke-width:2px,color:#fff
     style I fill:#9C27B0,stroke:#fff,stroke-width:2px,color:#fff
-<<<<<<< HEAD
-
-    classDef checkStyle fill:#00BCD4,stroke:#fff,stroke-width:2px,color:#fff
-    classDef processStyle fill:#FFC107,stroke:#fff,stroke-width:2px,color:#fff
-
-=======
     
     classDef checkStyle fill:#00BCD4,stroke:#fff,stroke-width:2px,color:#fff
     classDef processStyle fill:#FFC107,stroke:#fff,stroke-width:2px,color:#fff
     
->>>>>>> f21489ca56be5111a317ad324164baecc8f12c8a
     class C checkStyle
     class D,E,G,H processStyle
 ```
@@ -148,37 +137,21 @@ graph TB
 ### ✨ Core Features
 
 <img src="https://user-images.githubusercontent.com/74038190/212257467-871d32b7-e401-42e8-a166-fcfd7baa4c6b.gif" width="30"> **Sliding Window**
-<<<<<<< HEAD
-
-=======
->>>>>>> f21489ca56be5111a317ad324164baecc8f12c8a
 - Fixed-size FIFO buffer
 - Automatic oldest value removal
 - Efficient memory management
 
 <img src="https://user-images.githubusercontent.com/74038190/212257472-08e52665-c503-4bd9-aa20-f5a4dae769b5.gif" width="30"> **Weight Application**
-<<<<<<< HEAD
-
-=======
->>>>>>> f21489ca56be5111a317ad324164baecc8f12c8a
 - Configurable weight vector
 - Recent values emphasized
 - Flexible weighting schemes
 
 <img src="https://user-images.githubusercontent.com/74038190/212257454-16e3712e-945a-4ca2-b238-408ad0bf87e6.gif" width="30"> **Real-Time Processing**
-<<<<<<< HEAD
-
-=======
->>>>>>> f21489ca56be5111a317ad324164baecc8f12c8a
 - Stream-based computation
 - Instant results per value
 - No batch requirements
 
 <img src="https://user-images.githubusercontent.com/74038190/212257465-7ce8d493-cac5-494e-982a-5a9deb852c4b.gif" width="30"> **Signal Smoothing**
-<<<<<<< HEAD
-
-=======
->>>>>>> f21489ca56be5111a317ad324164baecc8f12c8a
 - Noise reduction
 - Trend detection
 - Pattern analysis
@@ -201,10 +174,6 @@ avg = /__  wᵢ × xᵢ
 ```
 
 **Where:**
-<<<<<<< HEAD
-
-=======
->>>>>>> f21489ca56be5111a317ad324164baecc8f12c8a
 - `w` = weight vector
 - `x` = value vector (recent first)
 - `n` = window size (constant)
@@ -217,11 +186,7 @@ avg = /__  wᵢ × xᵢ
 weights = [1, 1, 1, 1, 1]  # n=5
 values  = [50, 40, 30, 20, 10]
 
-<<<<<<< HEAD
-weighted_sum = (1×50 + 1×40 + 1×30 +
-=======
 weighted_sum = (1×50 + 1×40 + 1×30 + 
->>>>>>> f21489ca56be5111a317ad324164baecc8f12c8a
                 1×20 + 1×10)
              = 150
 
@@ -377,25 +342,9 @@ Legend: [New] → Recent    [Old] → About to leave    □ Empty slot
 ```
 
 Verify your Python:
-<<<<<<< HEAD
-
 ```bash
 python3 --version
 ```
-
-</details>
-
-<details open>
-<summary><b>▶️ Step 2: Run the Project</b></summary>
-
-<br>
-
-Navigate to the project directory:
-=======
-```bash
-python3 --version
-```
->>>>>>> f21489ca56be5111a317ad324164baecc8f12c8a
 
 </details>
 
@@ -410,19 +359,11 @@ cd project-2
 ```
 
 Execute the script:
-<<<<<<< HEAD
-
-=======
->>>>>>> f21489ca56be5111a317ad324164baecc8f12c8a
 ```bash
 python3 script.py
 ```
 
 Or make executable and run:
-<<<<<<< HEAD
-
-=======
->>>>>>> f21489ca56be5111a317ad324164baecc8f12c8a
 ```bash
 chmod +x script.py
 ./script.py
@@ -558,11 +499,7 @@ for i in range(20):
     # Simulate noisy sine wave
     clean = math.sin(i * 0.1)
     noise = clean + 0.1
-<<<<<<< HEAD
-
-=======
     
->>>>>>> f21489ca56be5111a317ad324164baecc8f12c8a
     smooth = wa.process(noise)
     print(f"{smooth:.4f}")
 ```
@@ -599,64 +536,6 @@ for i, temp in enumerate(readings, 1):
 ```
 
 **Output:**
-<<<<<<< HEAD
-
-```
-🌡️  Temperature Monitoring System
-==================================================
-Reading #1:  22.5°C → Filtered:  9.00°C
-Reading #2:  22.8°C → Filtered: 18.12°C
-Reading #3:  23.1°C → Filtered: 27.48°C
-Reading #4:  22.9°C → Filtered: 36.52°C
-Reading #5:  23.5°C → Filtered: 46.14°C
-Reading #6:  24.0°C → Filtered: 47.00°C
-Reading #7:  23.7°C → Filtered: 47.38°C
-Reading #8:  23.2°C → Filtered: 47.02°C
-```
-
-<div align="center">
-<img src="https://user-images.githubusercontent.com/74038190/212284115-f47cd8ff-2ffb-4b04-b5bf-4d1c14c0247f.gif" width="600">
-</div>
-
----
-
-## 🔧 Technical Deep Dive
-
-<div align="center">
-
-<img src="https://readme-typing-svg.herokuapp.com?font=Fira+Code&size=22&pause=1000&color=F7B801&center=true&vCenter=true&width=600&lines=Engineering+Details+%F0%9F%94%A7" alt="Technical" />
-
-</div>
-
-### ⏱️ Algorithm Complexity Analysis
-
-<div align="center">
-
-```
-┌────────────────────────────────────────────────────────────┐
-│                   COMPLEXITY BREAKDOWN                     │
-├────────────────────────────────────────────────────────────┤
-│                                                            │
-│  Time Complexity: O(n) per process() call                 │
-│     ├─ values.insert(0, value):  O(n) - list shift        │
-│     ├─ values.pop():              O(1) - remove last       │
-│     └─ sum loop:                  O(k) - k ≤ n values      │
-│                                                            │
-│  Space Complexity: O(n)                                    │
-│     ├─ weights list:   O(n) - constant after init         │
-│     └─ values list:    O(n) - max n elements              │
-│                                                            │
-│  Operations per process():                                 │
-│     • Insert at front  → O(n)                             │
-│     • Remove from back → O(1)                             │
-│     • Compute sum      → O(n)                             │
-│     • Return average   → O(1)                             │
-│                                                            │
-└────────────────────────────────────────────────────────────┘
-```
-
-</div>
-=======
 ```
 🌡️  Temperature Monitoring System
 ==================================================
@@ -713,7 +592,28 @@ Reading #8:  23.2°C → Filtered: 47.02°C
 
 </div>
 
->>>>>>> f21489ca56be5111a317ad324164baecc8f12c8a
+### 🎛️ Detailed Process Flow
+
+```mermaid
+graph TD
+    A[🆕 New Value x Arrives] --> B{📏 Is len(values) = n?}
+    B -->|Yes| C[🗑️ Remove Last Element<br/>values.pop]
+    B -->|No| D[✅ Skip Removal]
+    C --> E[📌 Insert at Front<br/>values.insert 0, x]
+    D --> E
+    E --> F[🔢 Initialize sum = 0]
+    F --> G[🔄 Loop: i = 0 to len values]
+    G --> H[➕ sum += weights[i] × values[i]]
+    H --> I{🔁 More values?}
+    I -->|Yes| G
+    I -->|No| J[➗ Divide sum by n]
+    J --> K[✨ Return Weighted Average]
+
+    style A fill:#4CAF50,stroke:#fff,stroke-width:2px,color:#fff
+    style E fill:#2196F3,stroke:#fff,stroke-width:2px,color:#fff
+    style H fill:#FF9800,stroke:#fff,stroke-width:2px,color:#fff
+    style K fill:#9C27B0,stroke:#fff,stroke-width:2px,color:#fff
+```
 
 ### 🎨 Weight Patterns & Their Effects
 
@@ -880,15 +780,9 @@ Reading #8:  23.2°C → Filtered: 47.02°C
 
 <div align="center">
 
-<<<<<<< HEAD
-_k = current size (k ≤ n), n = maximum window size_
-
-![Performance](<https://img.shields.io/badge/Performance-O(n)_per_call-FF6B35?style=for-the-badge&logo=speedtest&logoColor=white>)
-=======
 *k = current size (k ≤ n), n = maximum window size*
 
 ![Performance](https://img.shields.io/badge/Performance-O(n)_per_call-FF6B35?style=for-the-badge&logo=speedtest&logoColor=white)
->>>>>>> f21489ca56be5111a317ad324164baecc8f12c8a
 
 </div>
 
@@ -909,10 +803,6 @@ _k = current size (k ≤ n), n = maximum window size_
 <img src="https://user-images.githubusercontent.com/74038190/212257467-871d32b7-e401-42e8-a166-fcfd7baa4c6b.gif" width="100">
 
 ### 🪟 Sliding Window
-<<<<<<< HEAD
-
-=======
->>>>>>> f21489ca56be5111a317ad324164baecc8f12c8a
 FIFO data structure management & buffer handling
 
 </td>
@@ -921,10 +811,6 @@ FIFO data structure management & buffer handling
 <img src="https://user-images.githubusercontent.com/74038190/212257472-08e52665-c503-4bd9-aa20-f5a4dae769b5.gif" width="100">
 
 ### ⚖️ Weighted Aggregation
-<<<<<<< HEAD
-
-=======
->>>>>>> f21489ca56be5111a317ad324164baecc8f12c8a
 Combining values with different importance levels
 
 </td>
@@ -933,10 +819,6 @@ Combining values with different importance levels
 <img src="https://user-images.githubusercontent.com/74038190/212257454-16e3712e-945a-4ca2-b238-408ad0bf87e6.gif" width="100">
 
 ### 🎵 Signal Processing
-<<<<<<< HEAD
-
-=======
->>>>>>> f21489ca56be5111a317ad324164baecc8f12c8a
 Real-world DSP and filtering techniques
 
 </td>
@@ -945,10 +827,6 @@ Real-world DSP and filtering techniques
 <img src="https://user-images.githubusercontent.com/74038190/212257465-7ce8d493-cac5-494e-982a-5a9deb852c4b.gif" width="100">
 
 ### 🔢 Numerical Methods
-<<<<<<< HEAD
-
-=======
->>>>>>> f21489ca56be5111a317ad324164baecc8f12c8a
 Proper normalization & stability
 
 </td>
@@ -969,31 +847,19 @@ concepts = {
         "List Operations": "insert(0) and pop() for queue behavior",
         "Memory Management": "O(n) space with automatic cleanup"
     },
-<<<<<<< HEAD
-
-=======
     
->>>>>>> f21489ca56be5111a317ad324164baecc8f12c8a
     "Algorithm Design": {
         "Streaming": "Process one value at a time",
         "Online Algorithm": "No need to store entire dataset",
         "Time Complexity": "O(n) per operation acceptable for n ≤ 100"
     },
-<<<<<<< HEAD
-
-=======
     
->>>>>>> f21489ca56be5111a317ad324164baecc8f12c8a
     "Signal Processing": {
         "Moving Average": "Common DSP filter technique",
         "Weight Application": "Emphasize recent vs. historical data",
         "Normalization": "Division by n for consistent scale"
     },
-<<<<<<< HEAD
-
-=======
     
->>>>>>> f21489ca56be5111a317ad324164baecc8f12c8a
     "Software Engineering": {
         "Clean Code": "Simple, readable implementation",
         "Type Hints": "Better documentation and IDE support",
@@ -1125,11 +991,7 @@ class OptimizedWeightedAverage:
         self.weights = weights
         self.n = len(weights)
         self.values = deque(maxlen=self.n)  # Auto-removes oldest
-<<<<<<< HEAD
-
-=======
     
->>>>>>> f21489ca56be5111a317ad324164baecc8f12c8a
     def process(self, value):
         self.values.appendleft(value)  # O(1) instead of O(n)
         weighted_sum = sum(w * v for w, v in zip(self.weights, self.values))
@@ -1147,25 +1009,15 @@ class IncrementalWeightedAverage:
         self.n = len(weights)
         self.values = []
         self.current_sum = 0
-<<<<<<< HEAD
-
-=======
     
->>>>>>> f21489ca56be5111a317ad324164baecc8f12c8a
     def process(self, value):
         if len(self.values) == self.n:
             # Remove contribution of oldest value
             oldest = self.values.pop()
             self.current_sum -= self.weights[-1] * oldest
-<<<<<<< HEAD
-
-        self.values.insert(0, value)
-
-=======
         
         self.values.insert(0, value)
         
->>>>>>> f21489ca56be5111a317ad324164baecc8f12c8a
         # Update weights and add new contribution
         self.current_sum = sum(w * v for w, v in zip(self.weights, self.values))
         return self.current_sum / self.n
@@ -1183,20 +1035,12 @@ class NumpyWeightedAverage:
         self.weights = np.array(weights)
         self.n = len(weights)
         self.values = np.array([])
-<<<<<<< HEAD
-
-=======
     
->>>>>>> f21489ca56be5111a317ad324164baecc8f12c8a
     def process(self, value):
         self.values = np.insert(self.values, 0, value)
         if len(self.values) > self.n:
             self.values = self.values[:self.n]
-<<<<<<< HEAD
-
-=======
         
->>>>>>> f21489ca56be5111a317ad324164baecc8f12c8a
         weighted_sum = np.dot(self.weights[:len(self.values)], self.values)
         return weighted_sum / self.n
 ```
