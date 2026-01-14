@@ -592,9 +592,6 @@ Reading #8:  23.2°C → Filtered: 47.02°C
 
 </div>
 
-### 🎛️ Detailed Process Flow
-
-```mermaid
 graph TD
     A[🆕 New Value x Arrives] --> B{📏 Is len(values) = n?}
     B -->|Yes| C[🗑️ Remove Last Element<br/>values.pop]
