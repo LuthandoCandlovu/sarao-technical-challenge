@@ -134,17 +134,6 @@ Calculate the total
 graph TB
     A["🎯 Input Number<br/><b>12391</b>"]
     B["⚙️ Number Machine<br/><b>Processing Hub</b>"]
-<<<<<<< HEAD
-
-    C["🔄 Reverse<br/><b>Modulo Magic</b>"]
-    D["➕ Sum<br/><b>Digit Total</b>"]
-    E["⬆️ Increment<br/><b>Wrap Around</b>"]
-
-    F["✨ Output<br/><b>19321</b>"]
-    G["✨ Output<br/><b>16</b>"]
-    H["✨ Output<br/><b>23402</b>"]
-
-=======
     
     C["🔄 Reverse<br/><b>Modulo Magic</b>"]
     D["➕ Sum<br/><b>Digit Total</b>"]
@@ -154,7 +143,6 @@ graph TB
     G["✨ Output<br/><b>16</b>"]
     H["✨ Output<br/><b>23402</b>"]
     
->>>>>>> f21489ca56be5111a317ad324164baecc8f12c8a
     A --> B
     B --> C
     B --> D
@@ -162,11 +150,7 @@ graph TB
     C --> F
     D --> G
     E --> H
-<<<<<<< HEAD
-
-=======
     
->>>>>>> f21489ca56be5111a317ad324164baecc8f12c8a
     style A fill:#4CAF50,stroke:#2E7D32,stroke-width:4px,color:#fff,font-size:16px
     style B fill:#FF5722,stroke:#D84315,stroke-width:5px,color:#fff,font-size:16px
     style C fill:#2196F3,stroke:#1565C0,stroke-width:3px,color:#fff
@@ -210,15 +194,6 @@ graph TB
 <div align="center">
 
 | Step | Current `n` | Extract Digit<br/>`n % 10` | Build Reversed<br/>`rev × 10 + digit` | Remove Digit<br/>`n // 10` | Status |
-<<<<<<< HEAD
-| :--: | :---------: | :------------------------: | :-----------------------------------: | :------------------------: | :----: |
-|  1️⃣  |   `12391`   |            `1`             |           `0 × 10 + 1 = 1`            |           `1239`           |   🟢   |
-|  2️⃣  |   `1239`    |            `9`             |           `1 × 10 + 9 = 19`           |           `123`            |   🟢   |
-|  3️⃣  |    `123`    |            `3`             |          `19 × 10 + 3 = 193`          |            `12`            |   🟡   |
-|  4️⃣  |    `12`     |            `2`             |         `193 × 10 + 2 = 1932`         |            `1`             |   🟠   |
-|  5️⃣  |     `1`     |            `1`             |        `1932 × 10 + 1 = 19321`        |            `0`             |   🔴   |
-|  ✅  |  **DONE**   |             —              |              **`19321`**              |             —              |   ✨   |
-=======
 |:----:|:-----------:|:-------------------------:|:-------------------------------------:|:--------------------------:|:------:|
 | 1️⃣ | `12391` | `1` | `0 × 10 + 1 = 1` | `1239` | 🟢 |
 | 2️⃣ | `1239` | `9` | `1 × 10 + 9 = 19` | `123` | 🟢 |
@@ -226,7 +201,6 @@ graph TB
 | 4️⃣ | `12` | `2` | `193 × 10 + 2 = 1932` | `1` | 🟠 |
 | 5️⃣ | `1` | `1` | `1932 × 10 + 1 = 19321` | `0` | 🔴 |
 | ✅ | **DONE** | — | **`19321`** | — | ✨ |
->>>>>>> f21489ca56be5111a317ad324164baecc8f12c8a
 
 </div>
 
@@ -278,15 +252,6 @@ graph TB
 
 <div align="center">
 
-<<<<<<< HEAD
-| Original |   Operation    | Result |    Effect    |
-| :------: | :------------: | :----: | :----------: |
-|   `1`    | `(1 + 1) % 10` |  `2`   |  ✅ Normal   |
-|   `2`    | `(2 + 1) % 10` |  `3`   |  ✅ Normal   |
-|   `3`    | `(3 + 1) % 10` |  `4`   |  ✅ Normal   |
-|   `9`    | `(9 + 1) % 10` |  `0`   | 🔄 **WRAP!** |
-|   `1`    | `(1 + 1) % 10` |  `2`   |  ✅ Normal   |
-=======
 | Original | Operation | Result | Effect |
 |:--------:|:---------:|:------:|:------:|
 | `1` | `(1 + 1) % 10` | `2` | ✅ Normal |
@@ -294,7 +259,6 @@ graph TB
 | `3` | `(3 + 1) % 10` | `4` | ✅ Normal |
 | `9` | `(9 + 1) % 10` | `0` | 🔄 **WRAP!** |
 | `1` | `(1 + 1) % 10` | `2` | ✅ Normal |
->>>>>>> f21489ca56be5111a317ad324164baecc8f12c8a
 
 <br/>
 
@@ -613,19 +577,11 @@ Modulo 10 creates **cyclic behavior**:
 
 <div align="center">
 
-<<<<<<< HEAD
-|    Operation     | Time Complexity | Space Complexity | Method                  |
-| :--------------: | :-------------: | :--------------: | :---------------------- |
-|  🔄 **Reverse**  |     `O(d)`      |      `O(1)`      | Pure integer arithmetic |
-|    ➕ **Sum**    |     `O(d)`      |      `O(d)`      | String conversion       |
-| ⬆️ **Increment** |     `O(d)`      |      `O(d)`      | String iteration        |
-=======
 | Operation | Time Complexity | Space Complexity | Method |
 |:---------:|:---------------:|:----------------:|:-------|
 | 🔄 **Reverse** | `O(d)` | `O(1)` | Pure integer arithmetic |
 | ➕ **Sum** | `O(d)` | `O(d)` | String conversion |
 | ⬆️ **Increment** | `O(d)` | `O(d)` | String iteration |
->>>>>>> f21489ca56be5111a317ad324164baecc8f12c8a
 
 <br/>
 
@@ -706,67 +662,36 @@ Learn algorithms
 ```python
 def test_number_machine():
     """Complete test coverage for all operations"""
-<<<<<<< HEAD
-
-=======
     
->>>>>>> f21489ca56be5111a317ad324164baecc8f12c8a
     # ✅ Test 1: Main Example
     nm = NumberMachine(12391)
     assert nm.reverse_number() == 19321
     assert nm.sum_of_digits() == 16
     assert nm.increment_digits() == 23402
     print("✅ Main example test passed!")
-<<<<<<< HEAD
-
-=======
     
->>>>>>> f21489ca56be5111a317ad324164baecc8f12c8a
     # ✅ Test 2: Palindrome Number
     nm = NumberMachine(12321)
     assert nm.reverse_number() == 12321
     print("✅ Palindrome test passed!")
-<<<<<<< HEAD
-
-=======
     
->>>>>>> f21489ca56be5111a317ad324164baecc8f12c8a
     # ✅ Test 3: All Nines (Wrap-Around)
     nm = NumberMachine(999)
     assert nm.increment_digits() == 0
     print("✅ Wrap-around test passed!")
-<<<<<<< HEAD
-
-=======
     
->>>>>>> f21489ca56be5111a317ad324164baecc8f12c8a
     # ✅ Test 4: Single Digit
     nm = NumberMachine(5)
     assert nm.reverse_number() == 5
     assert nm.sum_of_digits() == 5
     assert nm.increment_digits() == 6
     print("✅ Single digit test passed!")
-<<<<<<< HEAD
-
-=======
     
->>>>>>> f21489ca56be5111a317ad324164baecc8f12c8a
     # ✅ Test 5: Trailing Zeros
     nm = NumberMachine(1000)
     assert nm.reverse_number() == 1
     assert nm.increment_digits() == 2111
     print("✅ Trailing zeros test passed!")
-<<<<<<< HEAD
-
-    # ✅ Test 6: Large Numbers
-    nm = NumberMachine(987654321)
-    assert nm.reverse_number() == 123456789
-    assert nm.sum_of_digits() == 45
-    print("✅ Large number test passed!")
-
-    print("\n🎉 All tests passed successfully! 🎉")
-
-=======
     
     # ✅ Test 6: Large Numbers
     nm = NumberMachine(987654321)
@@ -776,7 +701,6 @@ def test_number_machine():
     
     print("\n🎉 All tests passed successfully! 🎉")
 
->>>>>>> f21489ca56be5111a317ad324164baecc8f12c8a
 # Run tests
 test_number_machine()
 ```
@@ -793,19 +717,106 @@ test_number_machine()
 
 <br/>
 
-<<<<<<< HEAD
-=======
+## 💬 Interview Questions
 
->>>>>>> f21489ca56be5111a317ad324164baecc8f12c8a
 <br/>
 
 <div align="center">
 
-<<<<<<< HEAD
-=======
+### 🤔 Common Questions & Answers
 
+</div>
 
->>>>>>> f21489ca56be5111a317ad324164baecc8f12c8a
+<br/>
+
+<details>
+<summary><b>❓ Why not use <code>str[::-1]</code> for reversal?</b></summary>
+
+<br/>
+
+**Answer:**
+
+The challenge requires understanding **fundamental arithmetic operations**. Using modulo and integer division demonstrates:
+
+- ✅ Deep understanding of number theory
+- ✅ Ability to solve problems without built-ins
+- ✅ Knowledge of how numbers work at the digit level
+- ✅ Problem-solving with basic mathematical operators
+
+This approach shows **algorithmic thinking** rather than just knowing Python tricks.
+
+<br/>
+
+</details>
+
+<details>
+<summary><b>❓ What's the time complexity?</b></summary>
+
+<br/>
+
+**Answer:**
+
+**O(log₁₀ n)** or equivalently **O(d)** where `d` is the number of digits.
+
+**Why?**
+
+A number with `n` value has approximately `log₁₀(n)` digits. We process each digit exactly once.
+
+**Example:** 
+- Number: `12391` 
+- Digits: `5`
+- Operations: `5` iterations
+
+<br/>
+
+</details>
+
+<details>
+<summary><b>❓ How does modulo create wrap-around?</b></summary>
+
+<br/>
+
+**Answer:**
+
+The expression `(digit + 1) % 10` creates cyclic behavior in base 10:
+
+```python
+0 → (0+1) % 10 = 1
+1 → (1+1) % 10 = 2
+2 → (2+1) % 10 = 3
+...
+8 → (8+1) % 10 = 9
+9 → (9+1) % 10 = 0  ← Wraps back to 0!
+```
+
+This is the mathematical definition of **modular arithmetic** in base 10.
+
+<br/>
+
+</details>
+
+<details>
+<summary><b>❓ Why is string conversion OK for sum/increment?</b></summary>
+
+<br/>
+
+**Answer:**
+
+The constraint specifically targets **reverse** without built-ins. For sum and increment:
+
+- ✅ String conversion is a valid transformation technique
+- ✅ It separates concerns: conversion vs computation
+- ✅ It demonstrates understanding of multiple approaches
+- ✅ Real-world code often prioritizes readability
+
+The goal is to show **versatility** in problem-solving approaches.
+
+<br/>
+
+</details>
+
+<br/><br/>
+
 <div align="center">
 <img src="https://user-images.githubusercontent.com/74038190/212284100-561aa473-3905-4a80-b561-0d28506553ee.gif" width="800">
 </div>
