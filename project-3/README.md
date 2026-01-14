@@ -51,11 +51,7 @@
 <br/>
 
 ```
-<<<<<<< HEAD
-"The quick brown fox
-=======
 "The quick brown fox 
->>>>>>> f21489ca56be5111a317ad324164baecc8f12c8a
  jumps over the lazy dog"
 ```
 
@@ -75,10 +71,6 @@
 <br/>
 
 Design an efficient algorithm that:
-<<<<<<< HEAD
-
-=======
->>>>>>> f21489ca56be5111a317ad324164baecc8f12c8a
 - ✨ Detects pangrams
 - 🌐 Supports custom alphabets
 - 🔤 Case-insensitive checking
@@ -128,11 +120,7 @@ graph TB
     F{"⚖️ Subset Check<br/><b>Alphabet ⊆ String?</b>"}
     G["✅ Pangram<br/><b>TRUE</b>"]
     H["❌ Not Pangram<br/><b>FALSE</b>"]
-<<<<<<< HEAD
-
-=======
     
->>>>>>> f21489ca56be5111a317ad324164baecc8f12c8a
     A --> B
     B --> C
     C --> D
@@ -140,11 +128,7 @@ graph TB
     E --> F
     F -->|Yes| G
     F -->|No| H
-<<<<<<< HEAD
-
-=======
     
->>>>>>> f21489ca56be5111a317ad324164baecc8f12c8a
     style A fill:#4CAF50,stroke:#2E7D32,stroke-width:4px,color:#fff
     style D fill:#2196F3,stroke:#1565C0,stroke-width:3px,color:#fff
     style E fill:#FF9800,stroke:#EF6C00,stroke-width:3px,color:#fff
@@ -194,11 +178,7 @@ where ⊆ means "is a subset of"
 
 <div align="center">
 
-<<<<<<< HEAD
-### 📊 Processing: _"The quick brown fox jumps over the lazy dog"_
-=======
 ### 📊 Processing: *"The quick brown fox jumps over the lazy dog"*
->>>>>>> f21489ca56be5111a317ad324164baecc8f12c8a
 
 <br/>
 
@@ -210,15 +190,6 @@ where ⊆ means "is a subset of"
 
 <div align="center">
 
-<<<<<<< HEAD
-|  Step  | Operation                     | Result                                                            | Status |
-| :----: | :---------------------------- | :---------------------------------------------------------------- | :----: |
-| **1️⃣** | **Normalize to lowercase**    | `"the quick brown fox jumps over the lazy dog"`                   |   🟢   |
-| **2️⃣** | **Remove all spaces**         | `"thequickbrownfoxjumpsoverthelazydog"`                           |   🟢   |
-| **3️⃣** | **Extract unique characters** | `{t,h,e,q,u,i,c,k,b,r,o,w,n,f,x,j,m,p,s,v,l,a,z,y,d,g}`           |   🟡   |
-| **4️⃣** | **Compare with alphabet**     | Alphabet: `{a,b,c,d,e,f,g,h,i,j,k,l,m,n,o,p,q,r,s,t,u,v,w,x,y,z}` |   🟡   |
-| **✨** | **Subset validation**         | All 26 letters present!                                           |   ✅   |
-=======
 | Step | Operation | Result | Status |
 |:----:|:----------|:-------|:------:|
 | **1️⃣** | **Normalize to lowercase** | `"the quick brown fox jumps over the lazy dog"` | 🟢 |
@@ -226,7 +197,6 @@ where ⊆ means "is a subset of"
 | **3️⃣** | **Extract unique characters** | `{t,h,e,q,u,i,c,k,b,r,o,w,n,f,x,j,m,p,s,v,l,a,z,y,d,g}` | 🟡 |
 | **4️⃣** | **Compare with alphabet** | Alphabet: `{a,b,c,d,e,f,g,h,i,j,k,l,m,n,o,p,q,r,s,t,u,v,w,x,y,z}` | 🟡 |
 | **✨** | **Subset validation** | All 26 letters present! | ✅ |
->>>>>>> f21489ca56be5111a317ad324164baecc8f12c8a
 
 <br/>
 
@@ -270,11 +240,7 @@ where ⊆ means "is a subset of"
                     ⬇️  SUBSET CHECK  ⬇️
 
         Is Alphabet ⊆ String Set?  ✅ YES!
-<<<<<<< HEAD
-
-=======
         
->>>>>>> f21489ca56be5111a317ad324164baecc8f12c8a
         🎉 PANGRAM DETECTED! 🎉
 ```
 
@@ -419,11 +385,7 @@ vowels = "aeiou"
 text = "education"
 
 result = ispangram(
-<<<<<<< HEAD
-    text,
-=======
     text, 
->>>>>>> f21489ca56be5111a317ad324164baecc8f12c8a
     alphabet=vowels
 )
 
@@ -474,17 +436,9 @@ ispangram("")
 ```
 **Result:** `False` ❌
 
-<<<<<<< HEAD
-**Result:** `False` ❌
-
 </td>
 <td align="center" width="33%">
 
-=======
-</td>
-<td align="center" width="33%">
-
->>>>>>> f21489ca56be5111a317ad324164baecc8f12c8a
 **Only Spaces**
 
 ```python
@@ -492,17 +446,9 @@ ispangram("     ")
 ```
 **Result:** `False` ❌
 
-<<<<<<< HEAD
-**Result:** `False` ❌
-
 </td>
 <td align="center" width="34%">
 
-=======
-</td>
-<td align="center" width="34%">
-
->>>>>>> f21489ca56be5111a317ad324164baecc8f12c8a
 **With Numbers**
 
 ```python
@@ -510,21 +456,11 @@ ispangram("abc123xyz")
 ```
 **Result:** Depends on alphabet
 
-<<<<<<< HEAD
-**Result:** Depends on alphabet
-
 </td>
 </tr>
 <tr>
 <td align="center">
 
-=======
-</td>
-</tr>
-<tr>
-<td align="center">
-
->>>>>>> f21489ca56be5111a317ad324164baecc8f12c8a
 **Partial Alphabet**
 
 ```python
@@ -532,11 +468,6 @@ ispangram("abcdefghijk")
 ```
 **Result:** `False` ❌
 
-<<<<<<< HEAD
-**Result:** `False` ❌
-
-=======
->>>>>>> f21489ca56be5111a317ad324164baecc8f12c8a
 </td>
 <td align="center">
 
@@ -547,11 +478,6 @@ ispangram("aaa...zzz")
 ```
 **Result:** `True` ✅
 
-<<<<<<< HEAD
-**Result:** `True` ✅
-
-=======
->>>>>>> f21489ca56be5111a317ad324164baecc8f12c8a
 </td>
 <td align="center">
 
@@ -560,20 +486,6 @@ ispangram("aaa...zzz")
 ```python
 ispangram("AbCdEfG...")
 ```
-**Result:** `True` ✅
-
-</td>
-</tr>
-</table>
-
-<br/><br/>
-
-<div align="center">
-<img src="https://user-images.githubusercontent.com/74038190/229223156-0cbdaba9-3128-4d8e-8719-b6b4cf741b67.gif" width="700">
-</div>
-
-<br/><br/>
-
 **Result:** `True` ✅
 
 </td>
@@ -644,15 +556,6 @@ Operation Breakdown:
 
 <div align="center">
 
-<<<<<<< HEAD
-|     Approach      |    Time    | Memory | Code Complexity | Readability | Best For           |
-| :---------------: | :--------: | :----: | :-------------: | :---------: | :----------------- |
-| **Set Subset** ⭐ |   O(n+m)   | O(n+m) |     Low 🟢      |   High 🟢   | Production code    |
-|  Character Loop   |   O(n×m)   |  O(1)  |    Medium 🟡    |  Medium 🟡  | Memory constrained |
-|   Boolean Array   |  O(n+26)   | O(26)  |     High 🔴     |   Low 🔴    | ASCII only         |
-|      Sorting      | O(n log n) |  O(n)  |    Medium 🟡    |  Medium 🟡  | Sorted data        |
-|      Counter      |   O(n+m)   |  O(n)  |     Low 🟢      |  Medium 🟡  | Frequency analysis |
-=======
 | Approach | Time | Memory | Code Complexity | Readability | Best For |
 |:--------:|:----:|:------:|:---------------:|:-----------:|:---------|
 | **Set Subset** ⭐ | O(n+m) | O(n+m) | Low 🟢 | High 🟢 | Production code |
@@ -660,7 +563,6 @@ Operation Breakdown:
 | Boolean Array | O(n+26) | O(26) | High 🔴 | Low 🔴 | ASCII only |
 | Sorting | O(n log n) | O(n) | Medium 🟡 | Medium 🟡 | Sorted data |
 | Counter | O(n+m) | O(n) | Low 🟢 | Medium 🟡 | Frequency analysis |
->>>>>>> f21489ca56be5111a317ad324164baecc8f12c8a
 
 </div>
 
@@ -685,20 +587,12 @@ graph LR
     C["⚡ Set Method<br/><b>~0.001s</b>"]
     D["🐢 Loop Method<br/><b>~0.026s</b>"]
     E["⚙️ Regex Method<br/><b>~0.015s</b>"]
-<<<<<<< HEAD
-
-=======
     
->>>>>>> f21489ca56be5111a317ad324164baecc8f12c8a
     A --> B
     B --> C
     B --> D
     B --> E
-<<<<<<< HEAD
-
-=======
     
->>>>>>> f21489ca56be5111a317ad324164baecc8f12c8a
     style A fill:#4CAF50,stroke:#2E7D32,stroke-width:3px,color:#fff
     style C fill:#00C853,stroke:#00897B,stroke-width:4px,color:#fff
     style D fill:#FF9800,stroke:#EF6C00,stroke-width:3px,color:#fff
@@ -808,15 +702,6 @@ Self-documenting
 
 <div align="center">
 
-<<<<<<< HEAD
-|           Feature           | Benefit                          | Example                |
-| :-------------------------: | :------------------------------- | :--------------------- |
-| **Automatic Deduplication** | No need to track seen characters | `set("aaa")` → `{'a'}` |
-|     **O(1) Membership**     | Lightning-fast lookups           | `'a' in my_set`        |
-|   **Built-in Operations**   | Subset, union, intersection      | `A.issubset(B)`        |
-|    **Memory Efficient**     | Only stores unique values        | Better than lists      |
-|        **Pythonic**         | Idiomatic and clean              | Readable code          |
-=======
 | Feature | Benefit | Example |
 |:-------:|:--------|:--------|
 | **Automatic Deduplication** | No need to track seen characters | `set("aaa")` → `{'a'}` |
@@ -824,7 +709,6 @@ Self-documenting
 | **Built-in Operations** | Subset, union, intersection | `A.issubset(B)` |
 | **Memory Efficient** | Only stores unique values | Better than lists |
 | **Pythonic** | Idiomatic and clean | Readable code |
->>>>>>> f21489ca56be5111a317ad324164baecc8f12c8a
 
 </div>
 
@@ -863,20 +747,12 @@ test_cases = [
     ("Pack my box with five dozen liquor jugs", True),       # ✅ 32 letters
     ("How vexingly quick daft zebras jump", True),           # ✅ Creative
     ("Waltz, bad nymph, for quick jigs vex", True),          # ✅ Perfect pangram
-<<<<<<< HEAD
-
-=======
     
->>>>>>> f21489ca56be5111a317ad324164baecc8f12c8a
     # Not pangrams
     ("Hello World", False),                                   # ❌ Missing many
     ("abcdefghijklmnopqrstuvwxy", False),                    # ❌ Missing 'z'
     ("Python Programming", False),                            # ❌ Incomplete
-<<<<<<< HEAD
-
-=======
     
->>>>>>> f21489ca56be5111a317ad324164baecc8f12c8a
     # Edge cases
     ("", False),                                              # ❌ Empty
     ("     ", False),                                         # ❌ Only spaces
@@ -1160,11 +1036,7 @@ Choose right data structures
 <br/><br/>
 
 ```
-<<<<<<< HEAD
-🦊 "The quick brown fox..."
-=======
 🦊 "The quick brown fox..." 
->>>>>>> f21489ca56be5111a317ad324164baecc8f12c8a
    → Most famous pangram (35 letters)
 
 📦 "Pack my box with five dozen liquor jugs"
