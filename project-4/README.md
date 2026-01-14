@@ -1,162 +1,336 @@
+<div align="center">
+
 # 🔢 Number Machine
 
-![Python](https://img.shields.io/badge/Python-3.8+-blue.svg)
-![Algorithms](https://img.shields.io/badge/Type-Number_Theory-red.svg)
-![Status](https://img.shields.io/badge/Status-Complete-success.svg)
+<img src="https://readme-typing-svg.herokuapp.com?font=Fira+Code&size=32&duration=2500&pause=1000&color=FF6B6B&center=true&vCenter=true&multiline=true&width=900&height=80&lines=%F0%9F%94%A2+Transform+Numbers+Like+Magic;12391+%E2%86%92+19321+%E2%86%92+23402+%E2%9C%A8" alt="Typing SVG" />
 
-## 🎯 Problem Statement
+<br/>
 
-Create a number manipulation system that performs three distinct operations on integers **WITHOUT using built-in reverse functions**:
+<p>
+<img src="https://img.shields.io/badge/Python-3.8+-3776AB.svg?style=for-the-badge&logo=python&logoColor=white" alt="Python"/>
+<img src="https://img.shields.io/badge/Number_Theory-FF4444.svg?style=for-the-badge&logo=hackthebox&logoColor=white" alt="Number Theory"/>
+<img src="https://img.shields.io/badge/Complete-00C853.svg?style=for-the-badge&logo=checkmarx&logoColor=white" alt="Complete"/>
+</p>
 
-1. **Reverse Number**: Reverse digit order using modulus arithmetic
-2. **Sum of Digits**: Calculate total of all digits
-3. **Increment Digits**: Add 1 to each digit with wrap-around (9→0)
+<br/>
 
-### Example
+<img src="https://user-images.githubusercontent.com/74038190/212284100-561aa473-3905-4a80-b561-0d28506553ee.gif" width="800">
 
+</div>
+
+<br/><br/>
+
+---
+
+<br/>
+
+## 🎯 The Challenge
+
+<br/>
+
+<div align="center">
+
+### ✨ Build a number manipulation system with **ZERO built-in reverse functions** ✨
+
+<br/>
+
+<img src="https://user-images.githubusercontent.com/74038190/212284087-bbe7e430-757e-4901-90bf-4cd2ce3e1852.gif" width="50">
+
+</div>
+
+<br/>
+
+<table>
+<tr>
+<td align="center" width="33%">
+
+<img width="100" src="https://user-images.githubusercontent.com/74038190/235294011-b8074c31-9097-4a65-a594-4151b58743a8.gif" />
+
+<br/><br/>
+
+### 🔄 Reverse Number
+
+**Flip the digits backwards**
+
+Using pure mathematics
+
+<br/>
+
+`12391 → 19321`
+
+</td>
+<td align="center" width="33%">
+
+<img width="100" src="https://user-images.githubusercontent.com/74038190/235294012-0a55e343-37ad-4b0f-924f-c8431d9d2483.gif" />
+
+<br/><br/>
+
+### ➕ Sum Digits
+
+**Add all digits together**
+
+Calculate the total
+
+<br/>
+
+`1+2+3+9+1 = 16`
+
+</td>
+<td align="center" width="34%">
+
+<img width="100" src="https://user-images.githubusercontent.com/74038190/235294015-47144047-25ab-417c-af1b-6746820a20ff.gif" />
+
+<br/><br/>
+
+### ⬆️ Increment Each
+
+**Add 1 with wrap-around**
+
+9 becomes 0
+
+<br/>
+
+`12391 → 23402`
+
+</td>
+</tr>
+</table>
+
+<br/><br/>
+
+<div align="center">
+
+### 💫 Watch The Magic Happen
+
+<br/>
+
+<img src="https://user-images.githubusercontent.com/74038190/212749447-bfb7e725-6987-49d9-ae85-2015e3e7cc41.gif" width="600">
+
+</div>
+
+<br/>
+
+```diff
+🎯 Input Number: 12391
+
++ 🔄 Reverse Operation:   12391 → 19321 ✨
++ ➕ Sum Operation:       1 + 2 + 3 + 9 + 1 = 16 ✨
++ ⬆️ Increment Operation: [1→2] [2→3] [3→4] [9→0] [1→2] = 23402 ✨
 ```
-Input: 12391
 
-Operations:
-  Reverse:   19321
-  Sum:       1+2+3+9+1 = 16
-  Increment: 23402 (1→2, 2→3, 3→4, 9→0, 1→2)
-```
+<br/><br/>
 
-## 🏗️ Architecture
+---
+
+<br/>
+
+## 🏗️ System Architecture
+
+<br/>
+
+<div align="center">
 
 ```mermaid
 graph TB
-    A[Input Number: 12391] --> B[Number Machine]
+    A["🎯 Input Number<br/><b>12391</b>"]
+    B["⚙️ Number Machine<br/><b>Processing Hub</b>"]
 
-    B --> C[Reverse Number]
-    B --> D[Sum of Digits]
-    B --> E[Increment Digits]
+    C["🔄 Reverse<br/><b>Modulo Magic</b>"]
+    D["➕ Sum<br/><b>Digit Total</b>"]
+    E["⬆️ Increment<br/><b>Wrap Around</b>"]
 
-    C --> C1[Use % and //]
-    C1 --> C2[Build from Right]
-    C2 --> C3[19321]
+    F["✨ Output<br/><b>19321</b>"]
+    G["✨ Output<br/><b>16</b>"]
+    H["✨ Output<br/><b>23402</b>"]
 
-    D --> D1[String Conversion]
-    D1 --> D2[Sum Each Digit]
-    D2 --> D3[16]
+    A --> B
+    B --> C
+    B --> D
+    B --> E
+    C --> F
+    D --> G
+    E --> H
 
-    E --> E1[String Iteration]
-    E1 --> E2[Modulo 10 Addition]
-    E2 --> E3[23402]
-
-    style B fill:#4CAF50,stroke:#333,stroke-width:3px,color:#fff
-    style C3 fill:#2196F3,stroke:#333,stroke-width:2px,color:#fff
-    style D3 fill:#FF9800,stroke:#333,stroke-width:2px,color:#fff
-    style E3 fill:#9C27B0,stroke:#333,stroke-width:2px,color:#fff
+    style A fill:#4CAF50,stroke:#2E7D32,stroke-width:4px,color:#fff,font-size:16px
+    style B fill:#FF5722,stroke:#D84315,stroke-width:5px,color:#fff,font-size:16px
+    style C fill:#2196F3,stroke:#1565C0,stroke-width:3px,color:#fff
+    style D fill:#FF9800,stroke:#EF6C00,stroke-width:3px,color:#fff
+    style E fill:#9C27B0,stroke:#6A1B9A,stroke-width:3px,color:#fff
+    style F fill:#00BCD4,stroke:#0097A7,stroke-width:3px,color:#fff
+    style G fill:#FFC107,stroke:#FFA000,stroke-width:3px,color:#fff
+    style H fill:#E91E63,stroke:#C2185B,stroke-width:3px,color:#fff
 ```
 
-## 💡 Solution Overview
+</div>
 
-This implementation showcases **three distinct algorithmic approaches**:
+<br/><br/>
 
-### 1. **Reverse Number** - Pure Integer Arithmetic
+<div align="center">
+<img src="https://user-images.githubusercontent.com/74038190/212284115-f47cd8ff-2ffb-4b04-b5bf-4d1c14c0247f.gif" width="700">
+</div>
 
-Uses modulus operator (`%`) and integer division (`//`) to extract and reconstruct digits
+<br/><br/>
 
-### 2. **Sum of Digits** - String Conversion
+---
 
-Leverages Python's string iteration for clean summation
+<br/>
 
-### 3. **Increment Digits** - Modular Arithmetic
+## 🔄 Algorithm Breakdown
 
-Applies modulo 10 for automatic wrap-around behavior
+<br/>
 
-## 🔄 Algorithm Visualizations
+<div align="center">
 
-### Reverse Number Algorithm
+### 🎬 Step-by-Step Reverse Animation
 
-```
-Number: 12391
+<br/>
 
-Iteration 1:
-  n = 12391
-  digit = 12391 % 10 = 1
-  reversed = 0 × 10 + 1 = 1
-  n = 12391 // 10 = 1239
+<img src="https://user-images.githubusercontent.com/74038190/221352995-5ac18bdf-1a19-4f99-bbb6-77559b220470.gif" width="50">
 
-Iteration 2:
-  n = 1239
-  digit = 1239 % 10 = 9
-  reversed = 1 × 10 + 9 = 19
-  n = 1239 // 10 = 123
+</div>
 
-Iteration 3:
-  n = 123
-  digit = 123 % 10 = 3
-  reversed = 19 × 10 + 3 = 193
-  n = 123 // 10 = 12
+<br/>
 
-Iteration 4:
-  n = 12
-  digit = 12 % 10 = 2
-  reversed = 193 × 10 + 2 = 1932
-  n = 12 // 10 = 1
+<div align="center">
 
-Iteration 5:
-  n = 1
-  digit = 1 % 10 = 1
-  reversed = 1932 × 10 + 1 = 19321
-  n = 1 // 10 = 0
+| Step | Current `n` | Extract Digit<br/>`n % 10` | Build Reversed<br/>`rev × 10 + digit` | Remove Digit<br/>`n // 10` | Status |
+| :--: | :---------: | :------------------------: | :-----------------------------------: | :------------------------: | :----: |
+|  1️⃣  |   `12391`   |            `1`             |           `0 × 10 + 1 = 1`            |           `1239`           |   🟢   |
+|  2️⃣  |   `1239`    |            `9`             |           `1 × 10 + 9 = 19`           |           `123`            |   🟢   |
+|  3️⃣  |    `123`    |            `3`             |          `19 × 10 + 3 = 193`          |            `12`            |   🟡   |
+|  4️⃣  |    `12`     |            `2`             |         `193 × 10 + 2 = 1932`         |            `1`             |   🟠   |
+|  5️⃣  |     `1`     |            `1`             |        `1932 × 10 + 1 = 19321`        |            `0`             |   🔴   |
+|  ✅  |  **DONE**   |             —              |              **`19321`**              |             —              |   ✨   |
 
-Result: 19321 ✓
-```
+</div>
 
-### Sum of Digits Visualization
+<br/><br/>
 
-```
-Number: 12391 → "12391"
+<div align="center">
 
-Digit Extraction:
-  "1" → int("1") = 1
-  "2" → int("2") = 2
-  "3" → int("3") = 3
-  "9" → int("9") = 9
-  "1" → int("1") = 1
+### ➕ Sum of Digits Visualization
 
-Summation:
-  1 + 2 + 3 + 9 + 1 = 16 ✓
-```
+<br/>
 
-### Increment Digits Visualization
+<img src="https://user-images.githubusercontent.com/74038190/212749695-a6817c5a-a794-462b-afca-1b5ce7dd5e63.gif" width="50">
+
+</div>
+
+<br/>
 
 ```
-Number: 12391 → "12391"
-
-Digit Transformation:
-  "1" → (1 + 1) % 10 = 2
-  "2" → (2 + 1) % 10 = 3
-  "3" → (3 + 1) % 10 = 4
-  "9" → (9 + 1) % 10 = 0  ← Wraps around!
-  "1" → (1 + 1) % 10 = 2
-
-Reconstruction:
-  "2" + "3" + "4" + "0" + "2" = "23402"
-
-Result: 23402 ✓
+╔════════════════════════════════════════════════════════════════╗
+║                     NUMBER: 12391                              ║
+╠════════════════════════════════════════════════════════════════╣
+║                                                                ║
+║   Convert to String: "12391"                                   ║
+║                                                                ║
+║   Extract Each Digit:                                          ║
+║      ┌─────┬─────┬─────┬─────┬─────┐                          ║
+║      │  1  │  2  │  3  │  9  │  1  │                          ║
+║      └─────┴─────┴─────┴─────┴─────┘                          ║
+║                                                                ║
+║   Calculate Sum:                                               ║
+║      1 + 2 + 3 + 9 + 1 = 16  ✨                               ║
+║                                                                ║
+╚════════════════════════════════════════════════════════════════╝
 ```
 
-## 🚀 How to Run
+<br/><br/>
 
-### Prerequisites
+<div align="center">
+
+### ⬆️ Increment with Wrap-Around
+
+<br/>
+
+<img src="https://user-images.githubusercontent.com/74038190/212749447-bfb7e725-6987-49d9-ae85-2015e3e7cc41.gif" width="50">
+
+</div>
+
+<br/>
+
+<div align="center">
+
+| Original |   Operation    | Result |    Effect    |
+| :------: | :------------: | :----: | :----------: |
+|   `1`    | `(1 + 1) % 10` |  `2`   |  ✅ Normal   |
+|   `2`    | `(2 + 1) % 10` |  `3`   |  ✅ Normal   |
+|   `3`    | `(3 + 1) % 10` |  `4`   |  ✅ Normal   |
+|   `9`    | `(9 + 1) % 10` |  `0`   | 🔄 **WRAP!** |
+|   `1`    | `(1 + 1) % 10` |  `2`   |  ✅ Normal   |
+
+<br/>
+
+### ✨ Final Result: `23402`
+
+</div>
+
+<br/><br/>
+
+<div align="center">
+<img src="https://user-images.githubusercontent.com/74038190/212284158-e840e285-664b-44d7-b79b-e264b5e54825.gif" width="500">
+</div>
+
+<br/><br/>
+
+---
+
+<br/>
+
+## 🚀 Quick Start
+
+<br/>
+
+<div align="center">
+
+### 📦 Installation & Running
+
+</div>
+
+<br/>
+
+<table>
+<tr>
+<td width="50%">
+
+**📋 Prerequisites**
 
 ```bash
-Python 3.8 or higher
+Python 3.8+
 ```
 
-### Execution
+</td>
+<td width="50%">
+
+**▶️ Execute**
 
 ```bash
 cd project-4
 python script.py
 ```
 
-### Expected Output
+</td>
+</tr>
+</table>
+
+<br/>
+
+<div align="center">
+
+### 📸 Sample Output
+
+<br/>
+
+![Output Screenshot](https://github.com/user-attachments/assets/bac6616f-81af-4c8f-bf2f-42c453119ca4)
+
+</div>
+
+<br/>
+
+<div align="center">
+
+**Expected Console Output:**
 
 ```python
 Reversed: 19321
@@ -164,208 +338,456 @@ Digit sum: 16
 Incremented: 23402
 ```
 
-## 📝 Usage Examples
+</div>
 
-### Example 1: Basic Operations
+<br/><br/>
+
+<div align="center">
+<img src="https://user-images.githubusercontent.com/74038190/212284100-561aa473-3905-4a80-b561-0d28506553ee.gif" width="800">
+</div>
+
+<br/><br/>
+
+---
+
+<br/>
+
+## 💻 Code Examples
+
+<br/>
+
+<div align="center">
+
+### 🎯 Basic Usage
+
+</div>
+
+<br/>
 
 ```python
 from script import NumberMachine
 
+# Create instance with your number
 nm = NumberMachine(12391)
-print(f"Reversed: {nm.reverse_number()}")      # 19321
-print(f"Sum: {nm.sum_of_digits()}")            # 16
-print(f"Incremented: {nm.increment_digits()}")  # 23402
+
+# Perform operations
+print(f"🔄 Reversed: {nm.reverse_number()}")      # Output: 19321
+print(f"➕ Sum: {nm.sum_of_digits()}")            # Output: 16
+print(f"⬆️ Incremented: {nm.increment_digits()}")  # Output: 23402
 ```
 
-### Example 2: Edge Cases
+<br/><br/>
+
+<div align="center">
+
+### 🧪 Edge Cases
+
+</div>
+
+<br/>
+
+<table>
+<tr>
+<td width="50%">
+
+**Single Digit**
 
 ```python
-# Single digit
 nm = NumberMachine(7)
-nm.reverse_number()      # 7
-nm.sum_of_digits()       # 7
-nm.increment_digits()    # 8
 
-# Number with trailing zeros
-nm = NumberMachine(1200)
-nm.reverse_number()      # 21 (not 0021)
-nm.increment_digits()    # 2311
-
-# All nines
-nm = NumberMachine(999)
-nm.increment_digits()    # 000 → 0 (wraps all digits)
+nm.reverse_number()    # 7
+nm.sum_of_digits()     # 7
+nm.increment_digits()  # 8
 ```
 
-### Example 3: Large Numbers
+</td>
+<td width="50%">
+
+**Trailing Zeros**
+
+```python
+nm = NumberMachine(1200)
+
+nm.reverse_number()    # 21
+nm.increment_digits()  # 2311
+```
+
+</td>
+</tr>
+<tr>
+<td width="50%">
+
+**All Nines (Wrap Test)**
+
+```python
+nm = NumberMachine(999)
+
+nm.increment_digits()  # 0
+# All digits wrap!
+```
+
+</td>
+<td width="50%">
+
+**Large Numbers**
 
 ```python
 nm = NumberMachine(987654321)
-print(nm.reverse_number())      # 123456789
-print(nm.sum_of_digits())       # 45
-print(nm.increment_digits())    # 98765432 (9→0 wraps)
+
+nm.reverse_number()    # 123456789
+nm.sum_of_digits()     # 45
 ```
 
-## 🔧 Technical Details
+</td>
+</tr>
+</table>
 
-### Why Modulo (`%`) for Reversal?
+<br/><br/>
 
-The modulo operator extracts the **rightmost digit**:
+<div align="center">
+<img src="https://user-images.githubusercontent.com/74038190/229223156-0cbdaba9-3128-4d8e-8719-b6b4cf741b67.gif" width="700">
+</div>
+
+<br/><br/>
+
+---
+
+<br/>
+
+## 🧠 The Mathematics Behind It
+
+<br/>
+
+<div align="center">
+
+### 🔍 Understanding Modulo (`%`)
+
+<br/>
+
+<img src="https://user-images.githubusercontent.com/74038190/235294009-f5d9e7f6-dce8-4333-a4d7-991115b83c51.gif" width="80">
+
+</div>
+
+<br/>
+
+<div align="center">
+
+The modulo operator **extracts the rightmost digit**:
+
+</div>
+
+<br/>
 
 ```python
-12391 % 10 = 1  (rightmost digit)
-1239 % 10 = 9   (next digit)
-123 % 10 = 3    (next digit)
+12391 % 10 = 1  ← Rightmost digit
+1239 % 10  = 9  ← Next digit
+123 % 10   = 3  ← Next digit
+12 % 10    = 2  ← Next digit
+1 % 10     = 1  ← Last digit
 ```
 
-### Why Integer Division (`//`)?
+<br/><br/>
 
-Removes the **rightmost digit** after extraction:
+<div align="center">
+
+### ➗ Understanding Integer Division (`//`)
+
+<br/>
+
+<img src="https://user-images.githubusercontent.com/74038190/235294010-ec412ef5-e3da-4efa-b1d4-0ab4d4638755.gif" width="80">
+
+</div>
+
+<br/>
+
+<div align="center">
+
+Integer division **removes the rightmost digit**:
+
+</div>
+
+<br/>
 
 ```python
-12391 // 10 = 1239  (remove 1)
-1239 // 10 = 123    (remove 9)
-123 // 10 = 12      (remove 3)
+12391 // 10 = 1239  ← Removed 1
+1239 // 10  = 123   ← Removed 9
+123 // 10   = 12    ← Removed 3
+12 // 10    = 1     ← Removed 2
+1 // 10     = 0     ← Removed 1, DONE! ✅
 ```
 
-### Algorithm Complexity
+<br/><br/>
 
-| Operation            | Time Complexity | Space Complexity |
-| -------------------- | --------------- | ---------------- |
-| `reverse_number()`   | O(d)            | O(1)             |
-| `sum_of_digits()`    | O(d)            | O(d)             |
-| `increment_digits()` | O(d)            | O(d)             |
+<div align="center">
 
-_where d = number of digits_
+### 🔄 Understanding Wrap-Around
 
-## 🎓 Key Learnings
+<br/>
 
-### 1. **Modular Arithmetic**
+<img src="https://user-images.githubusercontent.com/74038190/212749695-a6817c5a-a794-462b-afca-1b5ce7dd5e63.gif" width="80">
+
+</div>
+
+<br/>
+
+<div align="center">
+
+Modulo 10 creates **cyclic behavior**:
+
+</div>
+
+<br/>
 
 ```python
-# Extract rightmost digit
-digit = number % 10
-
-# Remove rightmost digit
-number = number // 10
-
-# Wrap-around behavior
-(9 + 1) % 10 = 0
+(0 + 1) % 10 = 1
+(1 + 1) % 10 = 2
+(2 + 1) % 10 = 3
+   ...
+(8 + 1) % 10 = 9
+(9 + 1) % 10 = 0  ← Wraps back to 0! 🔄
 ```
 
-### 2. **Building Numbers from Digits**
+<br/><br/>
 
-```python
-result = 0
-for digit in digits:
-    result = result * 10 + digit
-```
+<div align="center">
+<img src="https://user-images.githubusercontent.com/74038190/212284115-f47cd8ff-2ffb-4b04-b5bf-4d1c14c0247f.gif" width="700">
+</div>
 
-### 3. **String vs Integer Operations**
+<br/><br/>
 
-- **String**: Easier iteration, more memory
-- **Integer**: Pure math, more complex logic
+---
 
-## 📊 Performance Analysis
+<br/>
 
-```mermaid
-graph TD
-    A[12391] --> B{Choose Method}
-    B -->|Integer Math| C[Reverse: O log n ]
-    B -->|String Convert| D[Sum/Increment: O log n ]
+## ⏱️ Performance Analysis
 
-    C --> E[19321]
-    D --> F[16 / 23402]
+<br/>
 
-    style A fill:#4CAF50,stroke:#333,stroke-width:2px,color:#fff
-    style C fill:#2196F3,stroke:#333,stroke-width:2px,color:#fff
-    style D fill:#FF9800,stroke:#333,stroke-width:2px,color:#fff
-```
+<div align="center">
 
-## 🔬 Mathematical Properties
+### 📊 Time & Space Complexity
 
-### Reverse Number Properties
+<br/>
 
-```
-reverse(reverse(n)) = n
-reverse(n) × reverse(m) ≠ reverse(n × m) generally
-reverse(123) = 321
-reverse(1200) = 21 (leading zeros lost)
-```
+<img src="https://user-images.githubusercontent.com/74038190/221352975-94759904-aa4c-4032-a8ab-b546efb9c478.gif" width="80">
 
-### Sum of Digits Properties
+</div>
 
-```
-sum_digits(n) ≡ n (mod 9)  ← Divisibility rule!
-sum_digits(123) = 6
-123 % 9 = 6 ✓
-```
+<br/>
 
-### Increment with Wrap-around
+<div align="center">
 
-```
-increment(9) = 0
-increment(99) = 00 → 0
-increment(19) = 20 (only 9 wraps)
-```
+|    Operation     | Time Complexity | Space Complexity | Method                  |
+| :--------------: | :-------------: | :--------------: | :---------------------- |
+|  🔄 **Reverse**  |     `O(d)`      |      `O(1)`      | Pure integer arithmetic |
+|    ➕ **Sum**    |     `O(d)`      |      `O(d)`      | String conversion       |
+| ⬆️ **Increment** |     `O(d)`      |      `O(d)`      | String iteration        |
+
+<br/>
+
+**where `d` = number of digits**
+
+</div>
+
+<br/><br/>
+
+<div align="center">
+
+### 🎯 Why This Approach?
+
+</div>
+
+<br/>
+
+<table>
+<tr>
+<td align="center" width="33%">
+
+**🎨 Clean Code**
+
+Easy to read<br/>
+Easy to maintain<br/>
+Pythonic style
+
+</td>
+<td align="center" width="33%">
+
+**⚡ Efficient**
+
+Linear time<br/>
+Minimal space<br/>
+Fast execution
+
+</td>
+<td align="center" width="34%">
+
+**🧠 Educational**
+
+Learn modulo<br/>
+Learn division<br/>
+Learn algorithms
+
+</td>
+</tr>
+</table>
+
+<br/><br/>
+
+<div align="center">
+<img src="https://user-images.githubusercontent.com/74038190/212284158-e840e285-664b-44d7-b79b-e264b5e54825.gif" width="500">
+</div>
+
+<br/><br/>
+
+---
+
+<br/>
 
 ## 🧪 Test Suite
 
+<br/>
+
+<div align="center">
+
+### ✅ Comprehensive Testing
+
+<br/>
+
+<img src="https://user-images.githubusercontent.com/74038190/216122003-15d7e300-92e5-40bc-881a-5f2dca3f7f16.png" width="80">
+
+</div>
+
+<br/>
+
 ```python
 def test_number_machine():
-    # Test Case 1: Given example
+    """Complete test coverage for all operations"""
+
+    # ✅ Test 1: Main Example
     nm = NumberMachine(12391)
     assert nm.reverse_number() == 19321
     assert nm.sum_of_digits() == 16
     assert nm.increment_digits() == 23402
+    print("✅ Main example test passed!")
 
-    # Test Case 2: Palindrome
+    # ✅ Test 2: Palindrome Number
     nm = NumberMachine(12321)
     assert nm.reverse_number() == 12321
+    print("✅ Palindrome test passed!")
 
-    # Test Case 3: All nines
+    # ✅ Test 3: All Nines (Wrap-Around)
     nm = NumberMachine(999)
     assert nm.increment_digits() == 0
+    print("✅ Wrap-around test passed!")
 
-    # Test Case 4: Single digit
+    # ✅ Test 4: Single Digit
     nm = NumberMachine(5)
     assert nm.reverse_number() == 5
     assert nm.sum_of_digits() == 5
     assert nm.increment_digits() == 6
+    print("✅ Single digit test passed!")
 
-    # Test Case 5: Trailing zeros
+    # ✅ Test 5: Trailing Zeros
     nm = NumberMachine(1000)
     assert nm.reverse_number() == 1
     assert nm.increment_digits() == 2111
+    print("✅ Trailing zeros test passed!")
 
-    print("All tests passed! ✓")
+    # ✅ Test 6: Large Numbers
+    nm = NumberMachine(987654321)
+    assert nm.reverse_number() == 123456789
+    assert nm.sum_of_digits() == 45
+    print("✅ Large number test passed!")
 
+    print("\n🎉 All tests passed successfully! 🎉")
+
+# Run tests
 test_number_machine()
 ```
 
-## 🎯 Interview Discussion Points
+<br/><br/>
 
-### Q: Why not use `str[::-1]` for reversal?
+<div align="center">
+<img src="https://user-images.githubusercontent.com/74038190/212749447-bfb7e725-6987-49d9-ae85-2015e3e7cc41.gif" width="600">
+</div>
 
-**A**: The constraint requires understanding of **fundamental arithmetic operations**. Using modulo and integer division demonstrates:
-
-- Understanding of number theory
-- Ability to work without built-in functions
-- Problem-solving with basic operators
-
-### Q: What's the time complexity?
-
-**A**: O(log₁₀ n) or equivalently **O(d)** where d is the number of digits, since we process each digit exactly once.
-
-### Q: How does modulo 10 create wrap-around?
-
-**A**: `(digit + 1) % 10` maps: 0→1, 1→2, ..., 8→9, **9→0**. The modulo operation automatically cycles back to 0.
+<br/><br/>
 
 ---
 
-**Author**: Luthando Candlovu  
-**Year**: 2026  
-**Challenge**: SARAO Technical Assessment
+<br/>
+
+<br/>
+
+<div align="center">
+
+<div align="center">
+<img src="https://user-images.githubusercontent.com/74038190/212284100-561aa473-3905-4a80-b561-0d28506553ee.gif" width="800">
+</div>
+
+<br/><br/>
+
+---
+
+<br/>
+
+<div align="center">
+
+## 👨‍💻 About
+
+<br/>
+
+<img src="https://user-images.githubusercontent.com/74038190/212284087-bbe7e430-757e-4901-90bf-4cd2ce3e1852.gif" width="100">
+
+<br/><br/>
+
+**Created by Luthando Candlovu**
+
+📅 Year: 2026<br/>
+🎯 Challenge: SARAO Technical Assessment<br/>
+💻 Language: Python 3.8+
+
+<br/>
+
+<img src="https://user-images.githubusercontent.com/74038190/213910845-af37a709-8995-40d6-be59-724526e3c3d7.gif" width="100">
+
+<br/><br/>
+
+### 🌟 Show Your Support
+
+**Give a ⭐️ if this project helped you!**
+
+<br/>
+
+[![GitHub followers](https://img.shields.io/github/followers/LuthandoCandlovu?style=social)](https://github.com/LuthandoCandlovu)
+
+<br/><br/>
+
+</div>
+
+---
+
+<br/>
+
+<div align="center">
+
+### 🎲 Fun Number Facts
+
+<br/>
 
 ```
-
+🔢 12391 is a composite number (13 × 953)
+✨ 19321 is a prime number!
+➕ Digital root of 12391 = 7
+🔄 Reversing twice returns original (identity property)
 ```
+
+<br/><br/>
+
+**Crafted with 🔢 Mathematics & ❤️ Python**
+
+<br/><br/>
+
+<img src="https://raw.githubusercontent.com/Trilokia/Trilokia/379277808c61ef204768a61bbc5d25bc7798ccf1/bottom_header.svg">
+
+</div>
